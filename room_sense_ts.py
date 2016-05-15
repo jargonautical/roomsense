@@ -66,7 +66,7 @@ while True:
     print ("Read ok") #(now.isoformat(), ReadLight(), ReadMove(), ReadTemp(), ReadHum())
     #target.close()
     time.sleep(16) # wait for sixteen seconds
-    params = urllib.urlencode({'field1': ReadLight(), 'field2': ReadTemp(), 'field3': ReadHum(), 'field4': ReadMove(), 'key':'UTNANW6LQ8JY3CP0'})
+    params = urllib.urlencode({'field1': ReadLight(), 'field2': ReadTemp(), 'field3': ReadHum(), 'field4': ReadMove(), 'key':'your_key_here'})
     headers = {"Content-type": "application/x-www-form-urlencoded","Accept": "text/plain"}
     conn = httplib.HTTPConnection("api.thingspeak.com:80")
     try:
